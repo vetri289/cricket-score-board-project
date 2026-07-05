@@ -1,0 +1,58 @@
+#include<stdio.h>
+int team_A();
+int team_B();
+int main(){
+    printf("11 is equal to wide and no ball\n");
+    int d;
+    printf("enter the team\n");
+    scanf("%d",&d);
+    switch(d){
+    case 1:
+    team_A();
+    break;
+    default:
+    team_B();
+    break;
+    }
+    return 0;
+    }
+    int team_A(){
+    int c; 
+    int sum=0;
+    int count=0;
+    printf("team A\n");
+    int a[5];
+    for(int i=0;i<5;i++){
+        printf("%d balls",i+1);
+        scanf("%d",&a[i]);
+        if(a[i]==11){
+            count++;
+            i--;
+            continue;
+        }
+        sum=sum+a[i];
+         c=sum +count;
+    }
+     printf("%d",c);
+     return c;
+}
+int team_B(){
+    int c; 
+    int sum=0;
+    int count=0;
+    printf("team A\n");
+    int a[5];
+    for(int i=0;i<5;i++){
+        printf("%d balls",i+1);
+        scanf("%d",&a[i]);
+        if(a[i]==11){
+            count++;
+            i--;
+            continue;
+        }
+        sum=sum+a[i];
+         c=sum +count;
+    }
+     printf("%d",c);
+     return c;
+}
